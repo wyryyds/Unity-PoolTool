@@ -12,3 +12,14 @@ Of course, you can also create object pools in code.Just call the method
 ```
 PoolManager.Instance.AddToPool(string tag,GameObject poolItemObj,int Count)
 ```
+### Take and Recycle
+You can take a single game object by the pool name, or you can take any number of objects by yourself, and call the following method：
+```
+PoolManager.Instance.GetPoolObject(string tag)
+PoolManager.Instance.GetPoolObjects(string tag,int count)
+```
+Likewise, we support you to recycle a single game object or multiple：
+```
+PoolManager.Instance.RecycleObjectToPool(string tag,GameObject poolObj)
+PoolManager.Instance.RecycleObjectToPool(string tag)
+```
