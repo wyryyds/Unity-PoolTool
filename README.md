@@ -31,3 +31,5 @@ You can choose to destroy a single object pool by character index, or you can ca
 PoolManager.Instance.ClearAnyPool(string tag)
 PoolManager.Instance.ClearAllPool()
 ```
+## Advantages and disadvantages
+It can be very convenient for you to create object pools for any object in the form of different names, and manage nodes at the same time, and the efficiency of taking and recycling is very good. Of course, I am not providing more interfaces to facilitate your other ideas and operations. I choose to leave it to you to implement more details. In addition, you can also use direct inheritance to customize the object pool that better suits your needs, which I believe would be a great thing.
