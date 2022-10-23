@@ -7,7 +7,7 @@ You need to create an empty object named PoolManager in your project, it will ac
 This is a general object pool plugin that allows you to generate object pools for multiple items through configuration or code for unified management.
 ### Initialize the object pool
 You can initialize your object pool by drag and drop in unity's hierarchy panel, like this
-![image](https://github.com/wyryyds/HAIPoolTool/blob/main/ImageFloder/01.png)
+![image](https://github.com/wyryyds/HAIPoolTool/blob/main/ImageFloder/01.png)   
 Of course, you can also create object pools in code.Just call the method
 ```
 PoolManager.Instance.AddToPool(string tag,GameObject poolItemObj,int Count)
