@@ -21,5 +21,13 @@ PoolManager.Instance.GetPoolObjects(string tag,int count)
 Likewise, we support you to recycle a single game object or multiple：
 ```
 PoolManager.Instance.RecycleObjectToPool(string tag,GameObject poolObj)
-PoolManager.Instance.RecycleObjectToPool(string tag)
+PoolManager.Instance.RecycleObjectsToPool(string tag)
+```
+### Automatic expansion
+You don't need to worry about its usage. When the pool exists and is exhausted, it will adopt an exponential growth strategy of 2 to expand one of your object pools.
+### Clearing the object pool
+You can choose to destroy a single object pool by character index, or you can call a method to destroy all object pools：
+```
+PoolManager.Instance.ClearAnyPool(string tag)
+PoolManager.Instance.ClearAllPool()
 ```
