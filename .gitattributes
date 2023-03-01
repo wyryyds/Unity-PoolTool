@@ -1,1 +1,4 @@
-* text=auto
+*unitypackage linguist-language=cs
+*csproj linguist-language=cs
+*aspx linguist-language=cs
+
